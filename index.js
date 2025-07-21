@@ -9,9 +9,9 @@ app.listen(4000, () =>{
     console.log('Server Listen on port 4000')
 })
 
-app.use('/', (req, res)=>{
-    res.send("Hola mundo")
-})
+//app.use('/', (req, res)=>{
+//    res.send("Hola mundo")
+//})
 
 app.use('/webhook', webhookRouter)
 

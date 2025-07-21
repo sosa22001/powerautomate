@@ -8,7 +8,7 @@ export const recibirNotificacion = (req, res) => {
     } catch (error) {
         return res.json({
             "message": "Ocurrió un error",
-            "error": e
+            "error": error.message || error
         })
     }
 }
